@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Tugas2">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt">
+
+        <TextView
+            android:id="@+id/Label_BB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="berat_badan"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Inputan_BB"
+            android:layout_width="40pt"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="bb"
+            android:inputType="number|numberDecimal"
+            android:maxLength="6"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/Satuan_Massa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt">
+
+        <TextView
+            android:id="@+id/Label_TB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tinggi badan"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Inputan_TB"
+            android:layout_width="40pt"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="tb"
+            android:inputType="number|numberDecimal"
+            android:maxLength="6"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/Satuan_Panjang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="m"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt">
+
+        <Button
+            android:id="@+id/Tombol_Hitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="hasil"
+            android:text="hitung" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt">
+
+        <TextView
+            android:id="@+id/Label_BMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="body mass index"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Hasil_BMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:maxLength="5"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt">
+
+        <TextView
+            android:id="@+id/Label_Arti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="artinya"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt">
+
+        <TextView
+            android:id="@+id/Arti_BMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+</TableLayout>
